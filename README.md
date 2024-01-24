@@ -7,7 +7,8 @@
 2. Attach `EpicApp=PalServer` as a startup param if you want your server displayed in Community Server List.
 
 3. Since there're too many servers right now, you may edit your recent server record manually to let it display in Recent Server List.
-**Note: This is a workaround for the `No password Has been entered` error when password are set.**
+**Note #1: This is a workaround for the `No password Has been entered` error when password are set.**
+**Note #2: Still you can let everyone who wants to play join your server by ip while unset the password for once, then set the password.**
 
     + Use utils such as UEsave ( [trumank/uesave-rs: Rust library to read and write Unreal Engine save files](https://github.com/trumank/uesave-rs) ) to deserialize the `UserOption.sav` file, which lies in `%LocalAppData%\Pal\Saved\SaveGames\UserOption.sav`.
 
@@ -44,6 +45,8 @@
     + Re-serialize and replace the save file.
 
         + Command Example: `> uesave.exe from-json -i Temp.json -o UserOption.sav`
+     
+    + Run the game!
 
 #### English is not my native language; please excuse typing errors.
 
@@ -76,6 +79,8 @@
     + 只能说是 `BUG` 吧 :P
 
     + 显然您可以通过不断刷新/点击 `显示后200项结果` 按钮来凭实（rén）力（pǐn）刷出来
+  
+    + 抑或是先取消密码，让所有要游玩该服务器的玩家们先通过输入 `IP` 进入一次服务器，再重新设置密码
 
     + 不过现在还有一种耍小聪明的办法可供参考，但是需要一些寄术操作（雾）：
 
